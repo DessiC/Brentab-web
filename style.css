@@ -1,0 +1,608 @@
+body {
+  font-family: "Raleway", sans-serif;
+  /* font-family: "sans-serif"; */
+  margin: 0;
+}
+
+input:invalid {
+  background-color: red;
+}
+
+/* Container klassen är en klass som vi återanvänder mycket i vår html, 
+den gör att varje sektion blir 80% av sidan och att det blir samma padding över 
+hela sidan. Den styr med andra ord väldigt mycket av grund layouten. 
+Den behöver du inte ändra i så mycket om du inte vill ändra den övergripande strukturen */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Här är styling som gäller för toppen på sidan */
+
+#index-header {
+  /* En ny grej är att vi nu lägger in bilden i CSS som en bakgrund, här redigerar du den. */
+  background-image: url("./images/stockholm.jpg");
+  /*  background-image: url("./images/grey.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* Styr bilden */
+  background-size: cover;
+  /* Styr bilden */
+  padding: 10px 0 100px 0;
+  height: 500px;
+}
+
+/* #index-header a {
+  color: white;
+} */
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+}
+
+#tjanster-header {
+  background-image: url("./images/byggnad.jpg");
+  background-size: cover;
+  /* Styr bilden */
+  padding: 10px 0 100px 0;
+  height: 500px;
+}
+
+#tjanster-title {
+  margin-top: 150px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first-page {
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid black;
+}
+
+/* #first-page-nav1 {
+  border-bottom: 1px solid white; 
+}*/
+/* #first-page-nav2 {
+  display: flex;
+  justify-content: center;
+}
+ */
+/* Styling för knappen */
+
+/* header a {
+    color: white;
+    border: white solid;
+    border-radius: 40px;
+   
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+    display: inline-block;
+} */
+
+/* Styling för iconerna */
+/* Här är styling som gäller för rubriker och text */
+
+h1 {
+  color: white;
+  font-size: 85px;
+  font-weight: 700;
+  margin: 40px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 50px 0px 0px 50px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 20px;
+  /* font-weight: 200; */
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  /*  margin-right: 100px; */
+  justify-content: space-around;
+  width: 40%;
+}
+
+.logo img {
+  width: 120px;
+  height: 70px;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.p-icon {
+  font-size: 20px;
+}
+
+.p-icon a {
+  color: black;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex-wrap: wrap;
+}
+
+.icon {
+  margin: 60px;
+  flex-basis: 20%;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+}
+
+#project-title {
+  text-align: left;
+}
+
+.project-icons {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex-wrap: wrap;
+}
+
+.project-icon {
+  margin: 50px;
+  flex-basis: 30%;
+  text-align: left;
+  font-size: 22px;
+}
+
+.project-icon img {
+  border-radius: 5px;
+}
+
+/* .icon img {
+    width: 150px;
+} */
+
+i {
+  font-size: 80px;
+}
+
+/* Styling för about-us sektionen */
+
+.about-us {
+  /*  background-color: #dcdcdc; */
+  background-color: #e7e7e7;
+}
+
+/* Styling för footern*/
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  /* background-color: #151515; */
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer-box-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer p {
+  font-size: 25px;
+}
+
+footer i {
+  font-size: 25px;
+  margin: 10px;
+  color: white;
+}
+
+.footer-box {
+  width: 100%;
+  height: 180px;
+  /*  border: 2px solid white; */
+}
+
+.footer-box p {
+  margin: 0;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.home {
+  margin-right: auto;
+}
+
+/* #white-nav {
+  background: rgb(231, 230, 230);
+}
+#white-nav a {
+  color: black;
+} */
+#nav-number {
+  font-family: Arial;
+}
+
+/*---------------CONTACT--------------------*/
+.black-header {
+  background-color: white;
+  /* background-color: #dcdcdc; */
+  /* background-color: #5c97bf; */
+  /* height: 110px; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 5px 5px 2px lightgrey;
+}
+
+a:hover {
+  /* background-color: rgb(163, 187, 238); */
+  color: blue;
+}
+
+.navlink {
+  margin-top: 40px;
+}
+
+nav a {
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+}
+
+
+
+.contact-header {
+  background-image: url("./images/bluepic.jpg");
+  background-size: cover;
+  /* Styr bilden */
+  padding: 10px 0 100px 0;
+  height: 400px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  /*  border: 2px solid black; */
+  margin: 70px auto;
+  /* background-color: #e7e7e7; */
+}
+
+.contact-container h2 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.contact-container .container {
+  padding-top: 0px;
+}
+
+.contact-body {
+  padding-top: 100px;
+}
+
+.contact-information {
+  margin: 20px 200px 25px 300px;
+}
+
+.contact-number-mail {
+  font-size: 25px;
+  margin: 0;
+}
+
+.circle {
+  /* border: 1px solid #3d6098; */
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #3d6098;
+  color: #e7e7e7;
+}
+
+p {
+  font-size: 30px;
+}
+
+/*------------------Project------------------*/
+/* .wrapper {
+  margin: 150px auto;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  height: 300px;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+.project-image {
+  width: 40%;
+  height: 250px;
+
+  margin: auto;
+}
+
+.project-text-container {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.project-text {
+  margin: 10px 20px;
+} */
+/* 
+hr {
+  color: rgba(0, 0, 0, 0.8);
+} */
+
+/*--------------About-----------------*/
+.wrapper-about {
+  margin: 150px auto;
+  width: 40%;
+}
+
+#myBtn {
+  background-color: #dcdcdc;
+  border: none;
+}
+
+.mystyle {
+  display: none;
+}
+
+#mail {
+  margin-left: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#fallskydd {
+  border-radius: 20px;
+}
+
+/*-------------*/
+#wijo {
+  margin: 50px;
+}
+
+ul li.active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
+#about-h2 {
+  margin-top: 150px;
+}
+
+
+/*------------------------FORM-------------------------*/
+label,
+input {
+  display: block;
+  text-align: left;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+button.submit {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(87, 89, 202);
+}
+
+/* Add a background color and some padding around the form */
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*----------------------------------------------------------------------*/
+/*----------------------
+#a31621    röd
+#f04b4c    röd
+
+#213159   mörkblå
+#3d6098   blå
+
+#e7e7e7     grå
+
+*/
+/* @media screen and (max-width: 1024px) {
+  .links {
+    width: 20%;
+  }
+} */
+@media screen and (max-width: 1392px) {
+  .project-icon {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .links a {
+    font-size: 13px;
+  }
+
+  .footer-box i {
+    font-size: 13px;
+  }
+
+  .footer-box p {
+    font-size: 13px;
+  }
+
+  #mail {
+    font-size: 12px;
+    margin-left: 18px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .links {
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    width: 50%;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.8s ease-in;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes linkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  i.contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    color: blue;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 40px;
+  }
+
+  .footer-box:first-child {
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 10px;
+  }
+
+  .footer-box p {
+    font-size: 13px;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  #mail {
+    font-size: 12px;
+    margin-left: 12px;
+  }
+
+  .footer-box i {
+    display: none;
+  }
+}
